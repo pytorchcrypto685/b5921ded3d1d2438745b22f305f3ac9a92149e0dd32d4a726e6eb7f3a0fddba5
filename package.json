@@ -1,0 +1,12 @@
+{
+  "name": "json-transformer-e2737c",
+  "version": "1.0.0",
+  "description": "A json-transformer utility",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "keywords": ["json-transformer", "utility"],
+  "license": "MIT"
+}

